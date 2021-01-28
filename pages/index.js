@@ -1,65 +1,30 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-
-export default function Home() {
+const Homepage = () => {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <div className="min-h-screen flex items-center bg-purple-600">
+      <div className="flex-1 max-w-full mx-auto p-8 sm:p-16">
+        <div className="grid grid-cols-1 gap-4 grid-flow-row-dense sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-6">
+          <div className="col-span-full bg-yellow-200 rounded-lg shadow-xl lg:col-span-1 lg:row-span-2">
+            <div className="h-24 text-center">Navigation</div>
+          </div>
+          <div className="bg-white rounded-lg shadow-xl lg:col-start-2 lg:col-span-2 xl:col-span-3">
+            <div className="h-24 text-center">Content</div>
+          </div>
+          <div className="bg-white rounded-lg shadow-xl lg:col-start-2 lg:col-span-2 xl:col-span-3">
+            <div className="h-24 text-center">Content</div>
+          </div>
+          <div className="bg-green-300 rounded-lg shadow-xl lg:col-start-2 lg:col-span-2 xl:col-start-5 xl:col-span-1">
+            <div className="h-24 text-center">Additional content</div>
+          </div>
+          <div className="bg-green-300 rounded-lg shadow-xl lg:col-start-2 lg:col-span-2 xl:col-start-5 xl:col-span-1">
+            <div className="h-24 text-center">Additional content</div>
+          </div>
+          <div className="bg-red-300 h-8 text-center rounded-lg shadow-xl lg:col-start-2 xl:col-start-5 2xl:col-start-6">
+            Social Media1
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      </div>
     </div>
-  )
-}
+  );
+};
+
+export default Homepage;
